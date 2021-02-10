@@ -10,10 +10,17 @@
 	<div class="header"> 
 		<h1><a href="">My projects</a></h1> 
 		<h1><a href="https://vinaykumarp1995v.netlify.app/#">home</a></h1> 
-		<h1><a href="" onclick="toggle()">contact</a></h1> 
+		
 		<h1><a href="mailto:vinaykumar.p1995v@gmail.com">mail-me</a></h1> 
 	</div>
-	<div class="container" id="blur">
+
+	<div class="popup" onclick="myFunction()"> hire me
+		<span class="popuptext" id="myPopup"><h2> <i class="far fa-envelope"></i> : vinaykumar.p1995v@gmail.com</h2>
+		<h2><i class="fas fa-mobile-alt"></i> : 9591565437
+		</h2></span>
+	</div>
+
+	<div class="container" >
 		<div class="box">
 			<div class="content">
 				<h2>01</h2>
@@ -132,7 +139,12 @@
 
 
 	</div>
-	<div id="popup">
+
+
+
+
+
+<!-- 	<div id="popup">
 		<h2>Contact me</h2>
 		<h2>Email : vinaykumar.p1995v@gmail.com</h2>
 		<h2>Phone : 9591565437
@@ -140,11 +152,17 @@
 		<h2>Address : #1249, sir M V layout 6th block, ullal upnagar , bangalore 560056</h2>			
 		<a href="#" onclick="toggle()">close</a>
 		<a href="mailto:vinaykumar.p1995v@gmail.com">Mail me</a>
-	</div>
+	</div> -->
 	<script type="text/javascript">
 		
-		function info() {
+		/*function info() {
 			alert("PHONE: 9591565437 Email: vinaykumar.p1995v@gmail.com")
+		}*/
+
+
+		function myFunction() {
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("show");
 		}
 	</script>
 	
